@@ -1,4 +1,4 @@
-# ⚡ MPI Parallel Matrix Multiplication Analysis
+#  MPI Parallel Matrix Multiplication Analysis
 
 Bu proje, **Message Passing Interface (MPI)** kullanılarak hem düşük seviyeli (C - OpenMPI) hem de yüksek seviyeli (Python - mpi4py) dillerde geliştirilmiş paralel matris-matris çarpımı (C = A x B) uygulamalarını içermektedir. 
 
@@ -11,12 +11,12 @@ Bu proje, **Message Passing Interface (MPI)** kullanılarak hem düşük seviyel
 * **Sonuç Toplama (MPI_Gather):** İşçi süreçlerde hesaplanan lokal `C` matrisi parçaları Master süreçte birleştirilir.
 * **Dinamik Boyutlandırma:** Algoritma, matris boyutunu (N) dosyanın ilk satırından dinamik olarak okuyacak şekilde tasarlanmıştır.
 
-## 🛠️ Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 * **Diller:** C, Python 3
 * **Kütüphaneler:** `<mpi.h>`, `mpi4py`, `numpy`
 * **Ortam:** Windows Subsystem for Linux (WSL2 - Ubuntu)
 
-## ⚙️ Kurulum ve Gereksinimler
+##  Kurulum ve Gereksinimler
 
 Projeyi yerel ortamınızda çalıştırmak için OpenMPI geliştirme araçlarına ve Python kütüphanelerine ihtiyacınız vardır. Ubuntu/Debian tabanlı sistemlerde kurulum için:
 
@@ -42,4 +42,5 @@ Python (mpi4py) İçin:
 
 # 8 süreç ile çalıştırın
 mpirun -np 8 python3 main.py
-Not: Fiziksel işlemci sayınızdan daha fazla süreç başlatmak isterseniz, komutunuza --oversubscribe bayrağını eklemeniz gerekmektedir (Örn: mpirun --oversubscribe -np 16 ./mpi_c).
+
+# Not: Fiziksel işlemci sayınızdan daha fazla süreç başlatmak isterseniz, komutunuza --oversubscribe bayrağını eklemeniz gerekmektedir (Örn: mpirun --oversubscribe -np 16 ./mpi_c).
