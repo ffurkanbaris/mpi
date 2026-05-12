@@ -10,7 +10,7 @@ Bu proje, **Message Passing Interface (MPI)** kullanılarak hem düşük seviyel
 * **Veri Yayını (MPI_Bcast):** `B` matrisinin tamamı iletişim maliyeti gözetilerek tüm süreçlere kopyalanır.
 * **Sonuç Toplama (MPI_Gather):** İşçi süreçlerde hesaplanan lokal `C` matrisi parçaları Master süreçte birleştirilir.
 * **Dinamik Boyutlandırma:** Algoritma, matris boyutunu (N) dosyanın ilk satırından dinamik olarak okuyacak şekilde tasarlanmıştır.
-* **Not:** a.txt ve b.txt dosyaları, 8x8 float veri tipinde matrisler, a-v2 ve b-v2 ise 512x512 float veri tipinde matrisleri oluşmaktadır.
+* **Not:** a.txt ve b.txt dosyaları, 8x8 float veri tipinde matrislerden, a-v2 ve b-v2 ise 512x512 float veri tipinde matrislerden oluşmaktadır.
 
 ##  Kullanılan Teknolojiler
 * **Diller:** C, Python 3
